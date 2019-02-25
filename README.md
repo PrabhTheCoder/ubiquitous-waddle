@@ -2,7 +2,9 @@
 ######################
 #### Midterm-1 #######
 ######################
+
 def midterm1():
+
     print("Midtem 1: ")
     weight1 = int(input("Weight (0-100)? "))
     score1 = int(input("Score earned? "))
@@ -29,6 +31,7 @@ def midterm1():
 ######################
 
 def midterm2():
+
     print()
     print("Midtem 2: ")
     weight2 = int(input("Weight (0-100)? "))
@@ -56,6 +59,7 @@ def midterm2():
 ######################
     
 def final():
+
     print()
     print("Final: ")
     weightf = int(input("Weight (0-100)? "))
@@ -83,12 +87,17 @@ def final():
 ######################
     
 def homework():
+
     print()
     list1 = []
+    
     list2 = []
     print("Homework:")
+    
     homework_weight=int(input("Weight(0-100)? "))
+    
     no_of_assign=int(input("Number of assignments? "))
+    
     for i in range(1,no_of_assign+1):
         assign_score=int(input("Assignment "+str(i)+" score? "))
         assign_max=int(input("Assignment "+str(i)+" max? "))
@@ -114,6 +123,7 @@ def homework():
 ######################
 
 def quizzes():
+
     print()
     print("Quizzes: ")
     quizzes_weight = int(input("Weight (0-100)? "))
@@ -129,6 +139,7 @@ def quizzes():
 ######################
 
 def daily_homework():
+
     print()
     print("Daily homework: ")
     d_weight = int(input("Weight (0-100)? "))
@@ -144,6 +155,7 @@ def daily_homework():
 ######################
 
 def grades(x):
+
     if x >= 90:
         return 'A'
     elif 80<=x<=90:
@@ -160,19 +172,30 @@ def grades(x):
 ######################
     
 print("This program reads exam/homework scores and reports your overall course grade.")   
+
 overall_percentage= round((midterm1()+midterm2()+final()+homework()+quizzes()+daily_homework()),1)
+
 print()
+
 print("Overall Percentage = "+str(overall_percentage))
 
 which_grade = grades(overall_percentage)
+
 print("Your grade will be at least: "+str(which_grade))
+
 if which_grade == 'A':
+
         print("<< Your limitation—it's only your imagination ! >>")
+        
 elif which_grade == 'B':
+
         print("<< Great ! Always be a constant learner. >>")
 elif which_grade == 'C':
+
         print("<< Hardwork beats talent when talent doesn't work hard ! >>")
+        
 elif which_grade == 'F':
+
         print("<< Failure is a stepping stone to Success ! >>")
 
 
